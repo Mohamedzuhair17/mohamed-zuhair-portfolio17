@@ -2,9 +2,10 @@ import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import appLogo1 from "../assets/img/ic-jusride.png";
-import appLogo2 from "../assets/img/ic-ems.png";
-import appLogo3 from "../assets/img/favicon.png";
+
+// import projLogo1 from "../assets/img/ic-neurobin.png";
+// import projLogo2 from "../assets/img/ic-ai-additive.png";
+// import projLogo3 from "../assets/img/favicon.png";
 
 export const Projects = () => {
   useEffect(() => {
@@ -14,77 +15,66 @@ export const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      logo: appLogo1,
-      logoClass: "project-logo1",
-      title: "JusRide - A Ride Companion for Cyclists",
+      // logo: projLogo1,
+      // logoClass: "project-logo1",
+      title: "NeuroBin — Smart Waste Classification System",
       fullDescription:
-        "JusRide is a community app for cyclists to create/join rides, form groups, and share posts with ride stats (distance, elevation, speed). It also offers cycle service booking and a social layer to follow, interact, and connect with riders — making it a complete cycling community platform.",
+        "NeuroBin uses a Convolutional Neural Network (CNN) model integrated with IoT sensors to automatically classify waste into recyclable and non-recyclable categories. The system optimizes waste segregation through real-time predictions and edge-based inference, improving efficiency and sustainability.",
       tags: [
-        "Kotlin",
-        "Java",
-        "XML",
-        "MVVM",
-        "Retrofit",
-        "Room",
-        "Kotlin Coroutines",
-        "Firebase",
-        "Material 3",
-        "PayU",
-        "Ola Maps",
-        "OCR",
+        "Python",
+        "Pytorch",
+        "YOLO-V8",
+        "OpenCV",
+        "Raspberry Pi",
+        "IoT Sensors",
+        "Machine Learning",
       ],
       link: {
-        type: "",
-        url: "",
+        type: "github",
+        url: "https://github.com/Mohamedzuhair17/Smart-Waste-detection-using-YOLO-V8",
       },
     },
     {
       id: 2,
-      logo: appLogo2,
-      logoClass: "project-logo2",
-      title: "Employee Management System",
+      // logo: projLogo2,
+      // logoClass: "project-logo2",
+      title: "AI in Additive Manufacturing — Research & Analysis",
       fullDescription:
-        "Employee Management App is an employee leave and timesheet management app with secure login/OTP flows, leave requests and status tracking, timesheet submission. It is a demo project developed to validate the core functionalities and workflows before implementing a real-time, full-scale project.",
+        "A detailed research study exploring how AI algorithms enhance additive manufacturing through process optimization, defect detection, and predictive maintenance. The project integrates data analytics with machine learning techniques to improve manufacturing accuracy and efficiency.",
       tags: [
-        "Kotlin",
-        "Java",
-        "Jetpack Compose",
-        "MVVM",
-        "Retrofit",
-        "Room",
-        "Kotlin Coroutines",
-        "Firebase",
-        "Material 3",
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Research",
+        "Data Analytics",
       ],
       link: {
-        type: "",
-        url: "",
+        type: "github",
+        url: "https://github.com/Mohamedzuhair17/AI-in-Additive-Manufacturing",
       },
     },
     {
       id: 3,
-      logo: appLogo3,
-      logoClass: "project-logo2",
-      title: "Yousuf Buhari | Portfolio",
+      // logo: projLogo3,
+      // logoClass: "project-logo3",
+      title: "Mohamed Zuhair | ML Engineer Portfolio",
       fullDescription:
-        "A responsive single-page portfolio built with React to showcase my Android projects and skills. Features smooth scroll animations and a contact form with EmailJS.",
+        "A minimal, modern React portfolio highlighting my journey as a Machine Learning Engineer. Includes smooth animations, a skill showcase, and live project demos built with React, AOS, and EmailJS.",
       tags: [
         "React",
         "Bootstrap 5",
-        "React Bootstrap",
-        "Material UI",
         "AOS",
         "Animate.css",
         "EmailJS",
-        "React Router",
-        "Swiper",
         "JavaScript",
         "CSS3",
         "HTML5",
       ],
       link: {
         type: "github",
-        url: "https://github.com/yousufbuhari/yousuf-buhari-portfolio",
+        url: "https://github.com/Mohamedzuhair17/yousuf-buhari-portfolio",
       },
     },
   ];
@@ -98,13 +88,13 @@ export const Projects = () => {
       <div className="project-wrapper">
         {projectsData.map((project) => (
           <div key={project.id} className="project-card" data-aos="fade-up">
-            <div className="project-header">
+            {/* <div className="project-header">
               <img
                 src={project.logo}
                 alt={`${project.title} Logo`}
                 className={project.logoClass}
               />
-            </div>
+            </div> */}
 
             <div className="project-info">
               <span className="project-title">{project.title}</span>
@@ -136,9 +126,8 @@ export const Projects = () => {
                   <span>
                     {project.link.type === "github"
                       ? "View on GitHub"
-                      : "View on Play Store"}
+                      : "View Project"}
                   </span>
-
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 38 15"

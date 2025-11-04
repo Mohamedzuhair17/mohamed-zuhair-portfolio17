@@ -5,7 +5,9 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <span> Made with ❤️ by Yousuf Buhari.</span>
+        <span>
+          Made with ❤️ by <strong>Mohamed Zuhair</strong>.
+        </span>
       </div>
     </footer>
   );

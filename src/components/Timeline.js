@@ -12,58 +12,70 @@ export const Timeline = () => {
 
   const timelineData = [
     {
-      date: "Feb 2024 - Present",
-      title: "Android Developer",
-      company: "Milespeak Technologies Pvt. Ltd., Chennai",
+      date: "2024 - Present",
+      title: "B.E Computer Science (AIML Specialization)",
+      company: "Chennai Institute of Technology, Chennai",
       descriptions: [
-        "• Built and maintained Android apps using Kotlin and Java.",
-        "• Used MVVM and Room Database for clean and efficient data handling.",
-        "• Added Firebase (Auth, FCM, Analytics, Crashlytics) for secure logins and tracking.",
-        "• Designed simple, modern UIs with XML, Jetpack Compose and Material Design.",
-        "• Developed location-based features using Ola Maps SDK.",
-        "• Implemented additional integrations including PayU for payments and OCR for document scanning.",
-        "• Ensured application reliability through testing with JUnit, Espresso, and AndroidX Test.",
-        "• Improved performance, reduced crashes, and ensured smooth app experience on all Android versions.",
+        "• Currently pursuing specialization in Artificial Intelligence and Machine Learning.",
+        "• Developed strong foundations in data structures, algorithms, and probability.",
+        "• Participated in ML hackathons and campus research projects involving neural networks and data analytics.",
+        "• Contributed to academic projects integrating IoT and ML for smart applications.",
+        "• Building portfolio projects to explore applied ML across domains like sustainability and automation.",
+      ],
+      icon: icCollege,
+      tech: [
+        "Machine Learning",
+        "Data Science",
+        "Python",
+        "Deep Learning",
+        "Statistics",
+      ],
+    },
+    {
+      date: "Sept 2023 - Apr 2024",
+      title: "Machine Learning & Data Science Training",
+      company: "Self-Paced Learning / Online Bootcamps",
+      descriptions: [
+        "• Completed comprehensive ML courses covering supervised and unsupervised algorithms.",
+        "• Built and deployed models using real-world datasets for regression, classification, and clustering problems.",
+        "• Gained proficiency in data preprocessing, visualization, and feature engineering.",
+        "• Explored deep learning frameworks and worked on small-scale computer vision projects.",
+        "• Used version control (Git) and collaborated on open-source ML repositories.",
+      ],
+      icon: icCourse,
+      tech: [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit-learn",
+        "TensorFlow",
+        "GitHub",
+      ],
+    },
+    {
+      date: "Apr 2024 - Present",
+      title: "Machine Learning Engineer (Research & Development)",
+      company: "Centre for Additive Manufacturing, CIT Chennai",
+      descriptions: [
+        "• Working on AI-driven optimization and predictive analytics for Additive Manufacturing processes.",
+        "• Developed machine learning models to detect defects and improve print quality using Python and Scikit-learn.",
+        "• Implemented CNN-based image classification to analyze layer consistency in 3D printed parts.",
+        "• Designed experiments integrating ML with sensor data to predict material properties.",
+        "• Collaborating with a multidisciplinary team to deploy ML insights into real-world manufacturing workflows.",
       ],
       icon: icBriefcase,
       tech: [
-        "Kotlin",
-        "Java",
-        "XML",
-        "Jetpack Compose",
-        "MVVM",
-        "Retrofit",
-        "Room",
-        "Kotlin Coroutines",
-        "Firebase",
-        "JUnit",
-        "Espresso",
+        "Python",
+        "TensorFlow",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "CNN",
+        "IoT Data",
       ],
-    },
-    {
-      date: "July 2023 - Feb 2024",
-      title: "Java Full Stack Web Development",
-      company: "Qspiders, Chennai",
-      descriptions: [
-        "• Learned full-stack web development using Java, Spring Boot, and REST APIs.",
-        "• Created responsive web pages with HTML, CSS, JavaScript.",
-        "• Designed and managed MySQL databases for better data handling.",
-        "• Worked on complete projects using CRUD operations and MVC pattern.",
-        "• Deployed apps with Apache Tomcat and used Git/GitHub for version control.",
-      ],
-      icon: icCourse,
-    },
-    {
-      date: "Aug 2019 - May 2023",
-      title: "B.E Mechanical Engineering",
-      company: "PSNACET, Dindigul",
-      descriptions: [
-        "• Completed Bachelor's in Mechanical Engineering, building analytical and problem-solving skills.",
-        "• Worked on academic projects and practical assignments to apply engineering concepts.",
-        "• Attended workshops and technical sessions to improve knowledge and skills.",
-        "• Completed mini and main projects, gaining hands-on experience in design, analysis, and project execution.",
-      ],
-      icon: icCollege,
     },
   ];
 
@@ -78,7 +90,7 @@ export const Timeline = () => {
           <div key={index} className="timeline-item" data-aos="fade-up">
             <div className="timeline-card">
               <div className="timeline-icon">
-                <img src={item.icon} alt="Briefcase" />
+                <img src={item.icon} alt="icon" />
               </div>
 
               <h3 className="timeline-title">{item.title}</h3>
@@ -96,13 +108,15 @@ export const Timeline = () => {
                 </p>
               ))}
 
-              <div className="tech-tags">
-                {item.tech?.map((tag, index) => (
-                  <span key={index} className="tech-tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              {item.tech && (
+                <div className="tech-tags">
+                  {item.tech.map((tag, i) => (
+                    <span key={i} className="tech-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}

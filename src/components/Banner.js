@@ -14,13 +14,12 @@ export const Banner = () => {
         <h1 class="intro-text" data-aos="fade-up">
           Hello(), I'm
         </h1>
-        <h1 id="name" data-aos="fade-up">Yousuf Buhari.</h1>
+        <h1 id="name" data-aos="fade-up">Mohamed Zuhair.</h1>
         <h1 class="banner-heading" data-aos="fade-up">
-          I build things for the Android.
+          I build machines that think.
         </h1>
         <p class="banner-description" data-aos="fade-up">
-          Designing and developing Android apps that are fast, elegant, and
-          built for seamless user experiences.
+          Developing AI-powered applications that think, adapt, and enhance human potential.
         </p>
 
         <a href="#connect">

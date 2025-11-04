@@ -85,7 +85,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="#home" className="navbar-brand">
             <span className="brand-name" data-aos="fade-down">
-              <span className="brand-text">YB</span>
+              <span className="brand-text">MZ</span>
               <span
                 className={`status-indicator ${
                   isAvailable ? "available" : "unavailable"

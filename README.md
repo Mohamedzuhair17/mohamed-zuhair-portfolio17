@@ -1,4 +1,4 @@
-# Yousuf Buhari — Android Developer Portfolio
+# Mohamed Zuhair - ML Engineer portfolio
 
 A modern, responsive single-page portfolio showcasing Android development projects, technical skills, and professional contact information.
 
@@ -183,11 +183,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Yousuf Buhari — Android Developer**
+**Mohamed Zuhair -ML Engineer**
 
-- **LinkedIn**: [yousufbuhari](https://www.linkedin.com/in/yousufbuhari)
-- **GitHub**: [yousufbuhari](https://github.com/yousufbuhari)
-- **Email**: [iyousufbuhari@gmail.com](mailto:iyousufbuhari@gmail.com)
+- **LinkedIn**: [Mohamed Zuhair S](https://www.linkedin.com/in/mdzuhair25)
+- **GitHub**: [MohamedZuhair](https://github.com/Mohamedzuhair17)
+- **Email**: [MohamedZuhair](mailto:mohamedzuhairkader@gmail.com)
 
 ## 🙏 Acknowledgments
 

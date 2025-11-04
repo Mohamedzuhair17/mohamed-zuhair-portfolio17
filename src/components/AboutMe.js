@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export const AboutMe = () => {
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({ duration: 600 });
   }, []);
 
   return (
@@ -17,31 +17,36 @@ export const AboutMe = () => {
       <div className="about-text-container" data-aos="fade-up">
         <div>
           <p>
-            Hey there! I'm <strong>Yousuf Buhari K M</strong> — an Android
-            developer who enjoys creating apps that are useful and fun to use.
+            Hey there! I'm <strong>Mohamed Zuhair</strong> — a Machine Learning Engineer
+            passionate about building systems that help machines understand the world better.
           </p>
 
           <p>
-            Funny enough, I started out with a{" "}
-            <strong>B.E. in Mechanical Engineering</strong>, but somewhere along
-            the way, I got hooked on coding. I took the leap, joined{" "}
-            <strong>QSpiders</strong> for their{" "}
-            <strong>Java Full Stack program</strong>, and that’s where my
-            software journey really kicked off.
+            I’m currently pursuing{" "}
+            <strong>Computer Science and Engineering with a specialization in AI & ML</strong>.
+            What began as curiosity about how algorithms learn turned into a passion for solving
+            real-world problems through data and intelligent automation.
           </p>
 
           <p>
-            I started learning <strong>Android development</strong> in 2024.
-            Since then, I’ve enjoyed building apps that are easy to use, look
-            good, and work well. I’m always learning new things to improve my
-            skills and make better apps for users.
+            I’ve explored various domains, from{" "}
+            <strong>NeuroBin</strong> — an AI-powered smart waste bin — to research that studies
+            how AI can enhance <strong>Additive Manufacturing</strong>. Each project helps me see
+            how theory turns into working technology.
           </p>
 
           <p>
-            I also explored <strong>Web development</strong> by building my
-            portfolio with React and Bootstrap. It helped me learn responsive
-            design, animations, and integrating tools like EmailJS, adding web
-            skills alongside my Android experience.
+            My current skillset includes{" "}
+            <strong>
+              Python, TensorFlow, PyTorch, scikit-learn, NumPy, Pandas,
+            </strong>{" "}
+            and data visualization tools. I love creating models that are efficient, interpretable,
+            and practical to deploy.
+          </p>
+
+          <p>
+            Outside coding, I enjoy tinkering with circuits and exploring how software and hardware
+            connect — because intelligence isn’t only digital, it’s physical too.
           </p>
         </div>
 
@@ -49,7 +54,7 @@ export const AboutMe = () => {
           <button
             className="resume-btn"
             id="resume-btn"
-            onClick={() => window.open("/yousuf-buhari-resume.pdf", "_blank")}
+            onClick={() => window.open("/mohamed-zuhair-resume.pdf", "_blank")}
           >
             <div className="sign">
               <svg viewBox="0 0 640 512">

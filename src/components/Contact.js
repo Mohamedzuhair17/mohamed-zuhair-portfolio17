@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "animate.css";
 import navIcon1 from "../assets/img/ic-linkedin.svg";
@@ -9,11 +9,10 @@ import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export const Contact = () => {
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({ duration: 600 });
   }, []);
 
   emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
@@ -63,7 +62,7 @@ export const Contact = () => {
           setButtonText("Send");
           setSnackbar({
             open: true,
-            message: "Something went wrong, please try again later.",
+            message: "Something went wrong. Please try again later.",
             severity: "error",
           });
         }
@@ -80,15 +79,15 @@ export const Contact = () => {
       <Container className="contact-content">
         <Row className="contact-container">
           <Col xs={12} lg={6} className="text-center mb-4 mb-lg-0">
-            <div data-aos="fadr-right">
+            <div data-aos="fade-right">
               <h2 className="get-in-touch-title" data-aos="fade-right">
-                Let's <br /> Get In <br /> Touch.
+                Let’s <br /> Connect <br /> & Collaborate.
               </h2>
 
               <div className="social-wrapper" data-aos="fade-right">
                 <div className="social-icon">
                   <a
-                    href="https://www.linkedin.com/in/yousufbuhari"
+                    href="https://www.linkedin.com/in/mdzuhair25"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -96,7 +95,7 @@ export const Contact = () => {
                   </a>
 
                   <a
-                    href="https://github.com/yousufbuhari"
+                    href="https://github.com/Mohamedzuhair17"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -104,7 +103,7 @@ export const Contact = () => {
                   </a>
 
                   <a
-                    href="mailto:iyousufbuhari@gmail.com"
+                    href="mailto:mohamedzuhairkader@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -116,8 +115,8 @@ export const Contact = () => {
           </Col>
 
           <Col xs={12} lg={6}>
-            <div>
-              <form onSubmit={handleSubmit} data-aos="fade-left">
+            <div data-aos="fade-left">
+              <form onSubmit={handleSubmit}>
                 <Row>
                   <Col xs={12} className="mb-2">
                     <input
@@ -143,7 +142,7 @@ export const Contact = () => {
                     <textarea
                       rows="6"
                       value={formDetails.message}
-                      placeholder="What’s on your mind?"
+                      placeholder="Write your message..."
                       onChange={(e) => onFormUpdate("message", e.target.value)}
                       required
                     ></textarea>
@@ -161,10 +160,9 @@ export const Contact = () => {
         </Row>
       </Container>
 
-      {/* Snackbar Notification */}
       <Snackbar
         open={snackbar.open}
-        autoHideDuration={2000}
+        autoHideDuration={2500}
         onClose={handleCloseSnackbar}
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
       >
